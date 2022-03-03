@@ -63,3 +63,9 @@ GS(Good Software) 인증 제도는 국가에서 SW제품을 테스트하여 부�
 테스트는 [TTA(소프트웨어시험인증연구소)](https://sw.tta.or.kr/service/gsce_it.jsp) 에서 진행한다.
 
 <img src="https://img.etnews.com/photonews/2010/1343585_20201007190911_774_0001.jpg" width="200" height="100"/>
+  
+  
+국제표준 ISO/IEC 25--- 을 따라 기능적합성, 성능효율성, 사용성, 신뢰성, 보안성 등에 대한 시험을 수행한다.
+
+***
+#### David Chappell 의 SW 품질 3요소
