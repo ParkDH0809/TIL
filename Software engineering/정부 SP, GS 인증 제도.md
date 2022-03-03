@@ -73,3 +73,9 @@ GS(Good Software) 인증 제도는 국가에서 SW제품을 테스트하여 부�
 
 ***
 #### David Chappell의 SW 품질 3요소
+SW가 중요한 현대에서 David Chappell은  SW의 품질을 3가지 요소로 나누었다.
+1. 기능적 품질 (Functional quality)
+2. 구조적 품질 (Structural quality)
+3. 프로세스 품질 (Process quality)
+
+또, SW 개발에서 서비스까지의 과정 속에서 그룹을 세개로 나누고 위의 품질을 각 그룹에 대입하였다.
