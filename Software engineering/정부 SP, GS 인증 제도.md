@@ -60,4 +60,6 @@ SP(Software Process) 인증 제도는 SW 개발 업체의 역량을 평가하여
 ***
 ### 정부 GS 인증 제도
 GS(Good Software) 인증 제도는 국가에서 SW제품을 테스트하여 부여하는 것으로 소비자, 기업에게 제품의 신뢰성을 줄 수 있다.  
-<img src-"https://img.etnews.com/photonews/2010/1343585_20201007190911_774_0001.jpg" width="200" height="100"/>
+테스트는 [TTA(소프트웨어시험인증연구소)](https://sw.tta.or.kr/service/gsce_it.jsp) 에서 진행한다.
+
+<img src="https://img.etnews.com/photonews/2010/1343585_20201007190911_774_0001.jpg" width="200" height="100"/>
