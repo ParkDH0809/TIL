@@ -4,8 +4,8 @@
 --------
 **content**
 1. [정부 SP 인증 제도](#정부-sp-인증-제도)
-2. 정부 GS 인증 제도
-3. David Chappell 의 SW 품질 3요소
+2. [정부 GS 인증 제도](#정부-gs-인증-제도)
+3. [David Chappell의 SW 품질 3요소](#david-chappell의-sw-품질-3요소)
 ***
 ### 일반적인 SW 발주 업체 선정 Process
 1. 사업 발주
@@ -71,4 +71,4 @@ GS(Good Software) 인증 제도는 국가에서 SW제품을 테스트하여 부�
 국제표준 ISO/IEC 25--- 을 따라 기능적합성, 성능효율성, 사용성, 신뢰성, 보안성 등에 대한 시험을 수행한다.
 
 ***
-#### David Chappell 의 SW 품질 3요소
+#### David Chappell의 SW 품질 3요소
