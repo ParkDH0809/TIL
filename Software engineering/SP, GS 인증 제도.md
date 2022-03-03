@@ -74,8 +74,29 @@ GS(Good Software) 인증 제도는 국가에서 SW제품을 테스트하여 부�
 ***
 #### David Chappell의 SW 품질 3요소
 SW가 중요한 현대에서 David Chappell은  SW의 품질을 3가지 요소로 나누었다.
+- SW Product quality
 1. 기능적 품질 (Functional quality)
 2. 구조적 품질 (Structural quality)
-3. 프로세스 품질 (Process quality)
+- SW Process quality
+3. 프로세스 품질 (Process quality)  
 
-또, SW 개발에서 서비스까지의 과정 속에서 그룹을 세개로 나누고 위의 품질을 각 그룹에 대입하였다.
+<img src="/assets/images/SE_DavidChappell.PNG">
+또, SW 개발에서 서비스까지의 과정 속에서 그룹을 세개로 나누고 위의 품질을 각 그룹에 대입하였다.  
+
+* Functional quality : SW가 의도한대로 작업을 수행하는가를 의미한다. Users 입장에서 판단하는 SW 품질이다.  
+  * 고객의 요구사항을 만족해야 한다.  
+  * 버그가 없어야 한다.  
+  * 실행이 빨라야 한다.  
+  * 사용이 쉬워야 한다.    
+
++ Structural quality : SW 코드가 잘 구조화 되었는가를 의미한다. Functional quality와 달리 품질을 평가하기 어렵다.  
+  + 코드 테스트가 용이해야 한다.
+  + 코드 유지보수가 용이해야 한다.
+  + 코드 가독성이 높아야 한다.
+  + 코드 효율성이 높아야 한다.
+  + 코드 보안성이 높아야 한다.
+
+-  Process quality : 사용자, 개발 팀 및 후원자가 받는 가치에 큰 영향을 미친다.    
+   - 납기일 준수
+   - 예산 내에서 개발
+   - 반복적으로 품질 높은 SW 개발 
