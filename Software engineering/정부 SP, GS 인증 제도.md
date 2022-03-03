@@ -23,7 +23,7 @@ SP(Software Process) 인증 제도는 SW 개발 업체의 역량을 평가하여
 이 제도를 통해 업체의 SP 품질 향상과 신뢰성을 확보할 수 있다.
 
 
-<img src="/assets/images/SE_SoftwareProcess.PNG">
+<img src="/assets/images/SE_SoftwareProcess.PNG" width="200" height="100">
 
 #### SP 인증 제도 영역
 5개의 영역, 17개의 평가항목, 70개의 세부평가항복으로 구분된다.
@@ -65,8 +65,7 @@ SP(Software Process) 인증 제도는 SW 개발 업체의 역량을 평가하여
 GS(Good Software) 인증 제도는 국가에서 SW제품을 테스트하여 부여하는 것으로 소비자, 기업에게 제품의 신뢰성을 줄 수 있다.  
 테스트는 [TTA(소프트웨어시험인증연구소)](https://sw.tta.or.kr/service/gsce_it.jsp) 에서 진행한다.
 
-<img src=/assets/images/SE_GoodSoftware.PNG">
-  
+<img src="/assets/images/SE_GoodSoftware.PNG" width="200" height="100">
   
 국제표준 ISO/IEC 25--- 을 따라 기능적합성, 성능효율성, 사용성, 신뢰성, 보안성 등에 대한 시험을 수행한다.  
 (인증 통과 시 시험성적서 및 품질인증서 제공)
