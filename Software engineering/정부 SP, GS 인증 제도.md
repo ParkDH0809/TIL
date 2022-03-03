@@ -23,7 +23,7 @@ SP(Software Process) 인증 제도는 SW 개발 업체의 역량을 평가하여
 이 제도를 통해 업체의 SP 품질 향상과 신뢰성을 확보할 수 있다.
 
 
-<img src="TIL/assets/images/SE_SoftwareProcess.PNG" width="200" height="100"/>
+<img src="/assets/images/SE_SoftwareProcess.PNG">
 
 #### SP 인증 제도 영역
 5개의 영역, 17개의 평가항목, 70개의 세부평가항복으로 구분된다.
