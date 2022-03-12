@@ -95,14 +95,24 @@ Iteration을 구분해 작업을 진행한다. 각 Interation마다 요구사항
 > 광범위한 문서보다 작동하는 SW를  
 > 계약 협상보다 고객과의 협력을  
 > 계획을 따르기보다 변화 대응을 중요시하자.  
+  
 라는 내용으로 애자일이 추구하는 방향을 알 수 있다.
 
 - Scrum  
-  - 대표적인 Agile 기법
-  - 
+  <img src="/assets/images/SE_ScrumProcess.PNG">
+  - 대표적인 Agile 기법  
+  - Product Owner, Scrum Master, Development team로 역할이 구분된다.  
+ 
+    1. Product Owner가 원하는 SW에 대한 item들을 적어 Product Backlog를 만든다.  
+    2. Product Backlog에서 이번 Sprint동안 만들 item들을 가져와 Sprint Backlog를 만든다.  
+    3. Sprint를 진행하면서 SW를 개발한다.  
+    4. 한 Sprint가 끝나면 Product Owner가 시연한다. 피드백을 통해 item을 추가, 변경 및 제거를 한다.  
+    5. 위 과정을 반복하면서 Product Owner의 요구사항을 맞춘 SW를 개발한다.
+
+
   - 장점 
     - 스폰서가 원하는 SW에 가까이 갈 수 있도록 도와준다.
     - 프로덕트 오너가 산출물을 잘 이해도록 도와준다.
     - 실패 위험을 낮추도록 도와준다.
 
-
+이외에도 XP, RUP 등 다양한 Agile process model이 있다.
