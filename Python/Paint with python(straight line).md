@@ -1,0 +1,133 @@
+직선을 그을 수 있는 그림판을 파이썬으로 만들어보자.
+=======
+**contents**  
+1. [tkinter 기초](#tkinter-기초)
+2. [Canvas](#Canvas)
+3. [bind](#Bind)
+4. [Coding](#Coding)
+***
+### tkinter 기초 
+tkinter는 Python의 GUI(Graphic User Interface) 중 하나로 Python에 기본적으로 내장되어 있어 따로 설치할 필요가 없다.  
+창을 만들고 상호작용을 할 수 있어서 많이 사용한다.
+
+```Python
+from tkinter import *
+# 객체 생성(윈도우 창을 연다.)
+tk = Tk()
+# mainloop 실행(창이 종료될 때까지 상호작용을 한다.)
+tk.mainloop
+```
+
+<img src="/assets/images/Python_Tkinter01.PNG">  
+
+기본적인 tkinter의 틀이다.  
+Tk()의 객체를 생성하고 mainloop() 매서드를 통해 유저의 입력(이벤트)을 기다리는 것이다. 
+이제 간단한 코드를 추가해보자.
+
+
+```Python
+from tkinter import *
+
+tk = Tk()
+# title 
+tk.title("Tkinter 연습")
+# 창의 크기 설정
+tk.geometry("240x120")
+# text 표시
+label = Label(tk, text = "hello world")
+# 레이블 배치
+label.pack()
+tk.mainloop
+```  
+<img src="/assets/images/Python_Tkinter02.PNG">   
+
+- title : 창의 title을 정할 수 있다.
+- geometry : 창의 크기를 정할 수 있다.
+- Label : 레이블을 만든다.
+- pack : 레이블을 화면에 배치한다. 이외의 방법으로 place, grid 등이 있다.(배치하지 않으면 레이블이 화면에 나오지 않는다.)
+
+***
+### Canvas  
+Canvas을 이용하여 선, 도형 등을 그릴 수 있다.
+```
+canvas = Canvas(window, height=300, width=300, bg="pink")  
+canvas.create_line(100, 100, 50, 200, width=5, fill="red")
+canvas.pack()  
+```  
+<img src="/assets/images/Python_Tkinter03.PNG">   
+Canvas(윈도우 창, 매개변수1, 매개변수2, ...)  
+위 코드에선 높이와 너비, 배경 색을 지정해주었다.  
+
+pack()에 아무 값도 넣어주지 않았기 때문에 창의 크기가 바뀌어도 Canvas의 크기는 고정된다.
+
+create_line(x1, y1, x2, y2, fill="색깔", 매개변수, ...) 같은 식으로 값을 입력하면 Canvas에 선이 그어진다.
+
+***
+### bind  
+이벤트와 실행할 함수를 설정하는 함수이다.  
+위젯.bind("이벤트", 함수)의 형태이며 중복해서 적용해도 된다.  
+
+|이벤트|의미|
+|:---:|:---:|
+|\<Button-1\>|마우스 왼쪽 버튼을 누를 때|
+|\<Button-2\>|마우스 휠 버튼을 누를 때|
+|\<Button-3\>|마우스 오른쪽 버튼을 누를 때|
+|...|...|  
+
+예를 들어 마우스 왼쪽을 누르는 이벤트를 원한다면 canvas.bind(\<Button-1\>, mouseClick)과 같이 작성한다.
+
+이번엔 직선을 그릴 수 있는 그림판을 만들 것이므로 마우스를 뗄 때의 이벤트도 필요하다.
+|이벤트|의미|
+|:---:|:---:|
+|\<ButtonRelease-1\>|마우스 왼쪽 버튼을 뗄 때|
+|\<ButtonRelease-2\>|마우스 휠 버튼을 뗄 때|
+|\<ButtonRelease-3\>|마우스 오른쪽 버튼을 뗄 때|  
+
+***
+### Coding
+이제 그림판을 만들어보자.  
+
+tkinter 라이브러리를 가져온다.
+```Python
+from tkinter import *
+```
+
+사용할 변수를 선언하자.
+```Python
+window = None
+canvas = None
+x1, y1, x2, y2 = None, None, None, None
+```
+
+다음으로 이벤트 발생 시 적용할 함수가 필요하다.  
+마우스를 버튼을 누를 때와 뗄 때 이벤트가 발생하므로 2개의 함수를 만들어야 한다.  
+마우스 버튼 누를 때 이벤트 함수
+```Python
+def mouseClick(event):
+    global x1, y1, x2, y2
+    x1=event.x
+    y1=event.y
+```
+
+ 버튼 뗄 때 이벤트 함수
+```Python
+def mouseDrop(event):
+    global x1, y1, x2, y2
+    x2=event.x
+    y2=event.y
+    canvas.create_line(x1, y1, x2, y2, width=5, fill="red")
+```
+
+마지막 main 함수이다.
+```Python
+window = Tk()
+window.title("직선을 그을 수 있는 그림판")
+canvas = Canvas(window, height=300, width=300)
+canvas.bind("<Button-1>", mouseClick)
+canvas.bind("<ButtonRelease-1>", mouseDrop)
+canvas.pack()
+window.mainloop()
+```
+
+결과 
+<img src="/assets/images/Python_Tkinter04.PNG">
