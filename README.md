@@ -12,7 +12,7 @@ Today I Learned
  4. [Symmetric Key Crypto - Block cipher](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/4.%20Symmetric%20Key%20Crypto%20-%20Block%20cipher.md)
 
 ### Python  
- 1. [Paint with python(straight line)](https://github.com/ParkDH0809/TIL/blob/main/Python/Paint%20with%20python(straight%20line).md)
+ 1. [Paint with python(straight line)](https://github.com/ParkDH0809/TIL/blob/main/Python/1.%20Paint%20with%20python(straight%20line).md)
 
 ### Software Engineering
  1. [SP. GS & David Chappell's SW quality 3Aspects, Tools](https://github.com/ParkDH0809/TIL/blob/main/Software%20engineering/1.%20SP%2C%20GS%20%EC%9D%B8%EC%A6%9D%20%EC%A0%9C%EB%8F%84.md)
