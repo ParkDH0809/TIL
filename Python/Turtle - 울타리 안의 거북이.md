@@ -1,0 +1,188 @@
+울타리를 나가지 못하는 거북이를 코딩해보자
+==========
+Python의 Turtle에 대해 알아보자
+----------
+**contents**
+1. [Turtle 기초](#Turtle-기초)
+2. [Random 모듈](#Random-모듈)
+3. [Coding](#Coding)
+
+### Turtle 기초
+turtle은 파이썬에서 구현 가능한 그래픽 모듈이다.  
+
+#### title, shape
+```python
+import turtle
+turtle.title('거북이, 자유를 찾아')
+turtle.shape('turtle')
+```
+
+turtle을 import하고   
+title은 "거북이, 자유를 찾아"  
+모양은 'turtle'로 하였다.
+  
+<img src="/assets/images/Python_Turtle01.PNG" width="250" height="250">  
+
+shape는 turtle 이외에도   
+<img src="/assets/images/Python_Turtle02.PNG" width="300" height="100">  
+가 있다.
+
+#### forward, right, left
+```python
+turtle.fd(100) ##앞으로 100
+turtle.rt(90)  ##오른쪽으로 90도 회전 
+turtle.fd(100) ##앞으로 100
+turtle.lt(90)  ##왼쪽으로 90도 회전 
+turtle.fd(100) ##앞으로 100
+```
+
+fd(x) or forward(x)는 커서가 바라보는 방향으로 x pixel만큼 움직이라는 의미이다.  
+커서 방향은 오른쪽을 default값으로 가지고 있다.  
+rt(right), lt(left)는 왼쪽, 오른쪽 각도이다. 위의 코드는 90도 만큼 꺾으라는 의미이다.  
+<img src="/assets/images/Python_Turtle03.PNG" width="250" height="250">  
+
+#### penup, pendown
+```python
+turtle.forward(100)
+turtle.penup() ##penup
+turtle.rt(90)
+turtle.fd(100)
+turtle.pendown() ##pendown
+turtle.lt(90)
+turtle.fd(100)
+```
+penup()과 pendown()은 선을 그을지 말지를 결정한다.  
+penup()은 펜을 위로 올린다는 뜻이므로 선이 그어지지 않고  
+pendown()은 선이 그어진다.  
+<img src="/assets/images/Python_Turtle04.PNG" width="250" height="250">  
+
+#### xcor, ycor, goto
+```python
+turtle.forward(100)
+turtle.rt(90)
+print(turtle.xcor(), turtle.ycor())  ##x, y좌표 출력
+turtle.fd(100)
+turtle.lt(90)
+turtle.fd(100)
+print(turtle.xcor(), turtle.ycor())  ##x, y좌표 출력
+turtle.goto(0,0)                     ##커서를 (0, 0)으로 옮김
+print(turtle.xcor(), turtle.ycor())  ##x, y좌표 출력
+
+```
+xcor과 ycor은 각각 커서의 x, y좌표를 반환한다.  
+거북이가 울타리를 나갔는지, 나가지 않았는지를 알기 위해 필요한 함수이다.  
+
+goto는 커서를 원하는 x, y좌표로 이동시킨다.
+거북이가 울타리를 나간 경우 다시 들어오도록 하기 위해 필요한 함수이다.  
+<img src="/assets/images/Python_Turtle05.PNG" width="250" height="250">  
+
+***
+### Random 모듈
+거북이가 무작위로 움직이도록 하기 위해 필요한 모듈이다.  
+```python
+import random
+
+print(random.random())
+```
+
+random() 함수는 0이상 1미만의 무작위 숫자를 반환한다.   
+
+만약 원하는 범위 내에서 무작위 숫자를 반환하고자 한다면  
+**random.random(x, y)** 과 같이 작성하면 된다.
+x이상 y미만 이라는 의미이며
+
+만약 1~6까지의 숫자를 반환하길 원한다면  
+**random.random(1, 7)**  
+으로 작성하면 된다.  
+
+거북이가 360도 아무 방향으로나 움직이도록 할 것이므로
+```python
+import random
+
+print(random.random(0, 360))
+```
+으로 작성하면 된다.
+
+***
+### Coding
+위의 내용을 기반으로 code를 짜보자.  
+
+거북이가 울타리를 나가면 중앙으로 돌아오는 것을 반복하므로 while문을 이용할 것이다.  
+횟수는 5회로 하자.
+
+먼저 필요한 변수를 정하자.
+- 울타리의 높이와 너비에 대한 변수 : width, height  
+- 거북이의 좌표에 대한 변수 : curX, curY  
+- 거북이의 이동방향과 거리에 대한 변수 : angle, dist  
+- 횟수를 세기 위한 변수 : exitCount  
+
+```python
+width, height = [300]*2
+curX, curY, angle, dist, exitCount = [0]*5
+```  
+
+while문은 다음과 같이 작성하자.  
+```python
+while True : 
+  ## angle : 0~359, dist : 1~99 
+  angle = random.randrange(0, 360)
+  dist = random.randrange(1, 100)
+  ## 거북이 이동
+  turtle.left(angle)
+  turtle.forward(dist)
+  ## 이동 후의 x, y좌표 반환
+  curX = turtle.xcor()
+  curY = turtle.ycor()
+    
+  ## 울타리 안에 있으면 pass, 나갔으면 다시 가운데로 이동
+  if(-width / 2 <= curX and curX <= width / 2) and (-height / 2 <= curY and curY <= height / 2) :
+    pass
+  else :
+    turtle.penup()
+    turtle.goto(0, 0)
+    turtle.pendown() 
+  ## 5회 나가면 while문 탈출
+    exitCount += 1
+    if exitCount >= 5 :
+      break
+```
+
+이제 창을 포함해 전체 코드를 보면 다음과 같다.  
+```python
+import turtle
+import random
+
+width, height = [300]*2
+curX, curY, angle, dist, exitCount = [0]*5
+
+turtle.title('거북이가 맘대로 다니기')
+turtle.shape('turtle')
+turtle.setup(width,height)
+
+while True : 
+  ## angle : 0~359, dist : 1~99 
+  angle = random.randrange(0, 360)
+  dist = random.randrange(1, 100)
+
+  turtle.left(angle)
+  turtle.forward(dist)
+  curX = turtle.xcor()
+  curY = turtle.ycor()
+    
+  ## 울타리 안에 있으면 pass, 나갔으면 다시 가운데로 이동.
+  if(-width / 2 <= curX and curX <= width / 2) and (-height / 2 <= curY and curY <= height / 2) :
+    pass
+  else :
+    turtle.penup()
+    turtle.goto(0, 0)
+    turtle.pendown()
+    
+  ## 5회 나가면 while문 탈출
+    exitCount += 1
+    if exitCount >= 5 :
+      break
+turtle.done()
+```
+결과   
+<img src="/assets/images/Python_Turtle06.PNG">
+
