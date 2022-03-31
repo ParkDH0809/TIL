@@ -17,8 +17,10 @@ Today I Learned
 
 ### Python  
  1. [Paint with python(straight line)](https://github.com/ParkDH0809/TIL/blob/main/Python/1.%20Paint%20with%20python(straight%20line).md)
+ 2. [Turtle - Free movement](https://github.com/ParkDH0809/TIL/blob/main/Python/2.%20Turtle%20-%20%EC%9A%B8%ED%83%80%EB%A6%AC%20%EC%95%88%EC%9D%98%20%EA%B1%B0%EB%B6%81%EC%9D%B4.md)
 
 ### Software Engineering
  1. [SP. GS & David Chappell's SW quality 3Aspects, Tools](https://github.com/ParkDH0809/TIL/blob/main/Software%20engineering/1.%20SP%2C%20GS%20%EC%9D%B8%EC%A6%9D%20%EC%A0%9C%EB%8F%84.md)
- 2. [
-SW development process & model(plan-based vs. agile)](https://github.com/ParkDH0809/TIL/blob/main/Software%20engineering/2.%20SW%20development%20process%20%26%20model.md)
+ 2. [SW development process & model(plan-based vs. agile)](https://github.com/ParkDH0809/TIL/blob/main/Software%20engineering/2.%20SW%20development%20process%20%26%20model.md)
+3. [SW process & methodology](https://github.com/ParkDH0809/TIL/blob/main/Software%20engineering/3.%20SW%20process%20%26%20methodology.md)
+4. [SW project](https://github.com/ParkDH0809/TIL/blob/main/Software%20engineering/4.%20Project.md)
