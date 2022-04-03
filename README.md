@@ -5,6 +5,8 @@ Today I Learned
  1. [Concept of Algorithm](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/1.%20Concept%20of%20Algorithm.md)
  2. [Time Complexity](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/2.%20Time%20Complexity.md)
  3. [Sorting(Bubble, Selection, Insertion)](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/3.%20Sorting(bubble%2C%20Selection%2C%20insertion).md)
+ 4. [Recursion](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/4.%20Recursion.md)
+ 5. [Sorting(Merge, Quick)](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/5.%20Sorting(Merge%2C%20Quick).md)
 ### Information Security
  1. [Security Basic knowledge](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/1.%20Security%20-%20Basic.md)
  2. [Various Traditional Ciphers](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/2.%20Various%20Traditional%20Ciphers.md)
