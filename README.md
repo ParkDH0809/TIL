@@ -9,6 +9,7 @@ Today I Learned
  5. [Sorting(Merge, Quick)](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/5.%20Sorting(Merge%2C%20Quick).md)
  6. [Divide and Conquer(D&C)](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/6.%20Divide%20and%20Conquer.md)
  7. [Recursion Tree & Master Theorem](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/7.%20Recursion%20Tree%20%26%20Master%20Theorem.md)
+ 8. [D&C application](https://github.com/ParkDH0809/TIL/blob/main/Algorithm/8.%20D%26C%20application.md)
 ### Information Security
  1. [Security Basic knowledge](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/1.%20Security%20-%20Basic.md)
  2. [Various Traditional Ciphers](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/2.%20Various%20Traditional%20Ciphers.md)
@@ -16,8 +17,12 @@ Today I Learned
  4. [Symmetric Key Crypto - Block cipher](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/4.%20Symmetric%20Key%20Crypto%20-%20Block%20cipher.md)
  5. [Symmetric Key Crypto - Block cipher Modes](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/5.%20Symmetric%20Key%20Crypto%20-%20Block%20cipher%20Modes.md)
  6. [MAC](https://github.com/ParkDH0809/TIL/blob/main/Information%20Security/6.%20Data%20Integrity%20-%20MAC.md)
+
+
 ### OS
 1. [OS - Basic](https://github.com/ParkDH0809/TIL/blob/main/Operating%20System/1.%20OS%20%EC%84%9C%EB%A1%A0.md)
+2. [Computer System Architecture](https://github.com/ParkDH0809/TIL/blob/main/Operating%20System/2.%20Computer%20System%20Architecture.md)
+3. [Multiprogramming & Multitasking](https://github.com/ParkDH0809/TIL/blob/main/Operating%20System/3.%20Multiprogramming%20vs.%20Multitasking.md)
 
 ### Python  
  1. [Paint with python(straight line)](https://github.com/ParkDH0809/TIL/blob/main/Python/1.%20Paint%20with%20python(straight%20line).md)
