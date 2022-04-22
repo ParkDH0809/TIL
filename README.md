@@ -25,6 +25,8 @@ Today I Learned
 3. [Multiprogramming & Multitasking](https://github.com/ParkDH0809/TIL/blob/main/Operating%20System/3.%20Multiprogramming%20vs.%20Multitasking.md)
 
 ### Python  
+ 0. [Python - Basic_01](https://github.com/ParkDH0809/TIL/blob/main/Python/0.%20Python%20Basic_01.md)  
+    [Python - Basic_02](https://github.com/ParkDH0809/TIL/blob/main/Python/0.%20Python%20Basic_02.md)
  1. [Paint with python(straight line)](https://github.com/ParkDH0809/TIL/blob/main/Python/1.%20Paint%20with%20python(straight%20line).md)
  2. [Turtle - Free movement](https://github.com/ParkDH0809/TIL/blob/main/Python/2.%20Turtle%20-%20%EC%9A%B8%ED%83%80%EB%A6%AC%20%EC%95%88%EC%9D%98%20%EA%B1%B0%EB%B6%81%EC%9D%B4.md)
 
